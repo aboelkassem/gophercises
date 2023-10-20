@@ -1,22 +1,22 @@
 [
   {
-    "Path":"/aboelkassem2",
-    "Url":"https://aboelkassem.tech"
+    "Path": "/aboelkassem2",
+    "Url": "https://aboelkassem.tech"
   },
   {
-    "Path":"/blog2",
-    "Url":"https://blog.aboelkassem.tech"
+    "Path": "/blog2",
+    "Url": "https://blog.aboelkassem.tech"
   },
   {
-    "Path":"/urlshort2",
-    "Url":"https://github.com/gophercises/urlshort"
+    "Path": "/urlshort2",
+    "Url": "https://github.com/gophercises/urlshort"
   },
   {
-    "Path":"/aboelkassem-github",
-    "Url":"https://github.com/aboelkassem"
+    "Path": "/aboelkassem-github",
+    "Url": "https://github.com/aboelkassem"
   },
   {
-    "Path":"/urlshort-final2",
-    "Url":"https://github.com/gophercises/urlshort/tree/solution"
+    "Path": "/urlshort-final2",
+    "Url": "https://github.com/gophercises/urlshort/tree/solution"
   }
 ]
