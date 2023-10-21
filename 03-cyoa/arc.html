@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Arc</title>
+</head>
+<body>
+    <!-- . = is current working object -->
+    <h1>{{.Title}}</h1>
+    <!-- For loop -->
+    {{range .Story}}
+        <p>{{.}}</p>
+    {{end}}
+    
+    {{if .Options}}
+        <ul>
+            {{range .Options}}
+                <li><a href="/?arc={{.Arc}}">{{.Text}}</a></li>
+            {{end}}
+        </ul>
+    {{else}}
+        <center>The End of story</center>
+        <a href="/">Start Over Again</a>
+    {{end}}
+</body>
+</html>
