@@ -137,7 +137,7 @@ func getUrls(pageUrl string) ([]string, error) {
 }
 
 // Urlset was generated 2023-10-30 19:13:12 by https://xml-to-go.github.io/ in Ukraine.
-// xml annotations
+// xml annotations, field tags
 type SitemapXML struct {
 	XMLName xml.Name        `xml:"urlset"`
 	Xmlns   string          `xml:"xmlns,attr"`
