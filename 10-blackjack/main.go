@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github/aboelkassem/gophercises/blackjack/deck"
 	"log"
 	"strings"
+
+	"github.com/aboelkassem/gophercises/blackjack/deck"
 )
 
 type PlayType int

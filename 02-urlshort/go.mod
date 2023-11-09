@@ -1,4 +1,4 @@
-module github/aboelkassem/gophercises-solutions/urlshort
+module github.com/aboelkassem/gophercises-solutions/urlshort
 
 go 1.20
 

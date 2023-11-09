@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github/aboelkassem/gophercises/deck/deck"
+
+	"github.com/aboelkassem/gophercises/deck/deck"
 )
 
 func main() {

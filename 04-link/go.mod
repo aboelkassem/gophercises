@@ -1,4 +1,4 @@
-module github/aboelkassem/gophercises/link
+module github.com/aboelkassem/gophercises/link
 
 go 1.20
 

@@ -1,4 +1,4 @@
-module github/aboelkassem/gophercises/task
+module github.com/aboelkassem/gophercises/task
 
 go 1.20
 

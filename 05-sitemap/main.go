@@ -3,12 +3,13 @@ package main
 import (
 	"encoding/xml"
 	"flag"
-	"github/aboelkassem/gophercises/sitemap/link"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 	"strings"
+
+	"github.com/aboelkassem/gophercises/sitemap/link"
 )
 
 func main() {
