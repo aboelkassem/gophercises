@@ -1,4 +1,4 @@
-module github/aboelkassem/gophercises/phone
+module github.com/aboelkassem/gophercises/phone
 
 go 1.20
 

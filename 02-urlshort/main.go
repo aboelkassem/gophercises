@@ -4,10 +4,11 @@ import (
 	"database/sql"
 	"flag"
 	"fmt"
-	"github/aboelkassem/gophercises-solutions/urlshort/urlshort"
 	"io/ioutil"
 	"net/http"
 	"os"
+
+	"github.com/aboelkassem/gophercises-solutions/urlshort/urlshort"
 
 	_ "github.com/lib/pq" // load postgres driver, _ for not unused in the code
 )

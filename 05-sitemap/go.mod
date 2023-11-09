@@ -1,4 +1,4 @@
-module github/aboelkassem/gophercises/sitemap
+module github.com/aboelkassem/gophercises/sitemap
 
 go 1.20
 

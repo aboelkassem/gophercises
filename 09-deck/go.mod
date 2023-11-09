@@ -1,3 +1,3 @@
-module github/aboelkassem/gophercises/deck
+module github.com/aboelkassem/gophercises/deck
 
 go 1.20

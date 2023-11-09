@@ -1,6 +1,6 @@
 package main
 
-import "github/aboelkassem/gophercises/task/cmd"
+import "github.com/aboelkassem/gophercises/task/cmd"
 
 /*
 $ task
