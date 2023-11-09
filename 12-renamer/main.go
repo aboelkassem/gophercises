@@ -48,6 +48,8 @@ func walkFn(path string, info os.FileInfo, err error) error {
 	if len(stringMatches) == 0 {
 		return nil
 	}
+
+	// convert []strings to []interface{}
 	matches := make([]interface{}, len(stringMatches)-1)
 	for i := 1; i < len(stringMatches); i++ {
 		matches[i-1] = stringMatches[i]
