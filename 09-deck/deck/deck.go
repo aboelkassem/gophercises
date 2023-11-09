@@ -149,6 +149,12 @@ func OptionShuffle() Option {
 //	deck.OptionSort(func(i, j deck.Card) bool {
 //		return i.Suit > j.Suit
 //	}),
+// can return
+// Option(func(cards []Card) []Card {
+// })
+// or direct
+// func(cards []Card) []Card {
+// }
 
 // OptionSort can sort a deck based on the sorting function fn
 func OptionSort(fn func(i, j Card) bool) Option {
@@ -168,19 +174,19 @@ func SortDefault(i, j Card) bool {
 
 // OptionAddJokers adds n arbitary Jokers to the end of a deck
 func OptionAddJokers(n int) Option {
-	return func(cards []Card) []Card {
+	return Option(func(cards []Card) []Card {
 		for i := 1; i <= n; i++ {
 			cards = append(cards, Card{
 				Suit: SuitJoker,
 			})
 		}
 		return cards
-	}
+	})
 }
 
 // OptionExclude uses fn to know which cards to exludes from a deck
 func OptionExclude(fn func(Card) bool) Option {
-	return func(cards []Card) []Card {
+	return Option(func(cards []Card) []Card {
 		var newCards []Card
 		for _, c := range cards {
 			if fn(c) {
@@ -189,7 +195,7 @@ func OptionExclude(fn func(Card) bool) Option {
 			newCards = append(newCards, c)
 		}
 		return newCards
-	}
+	})
 }
 
 // OptionCompose composes a bigger deck by adding other decks to a deck
