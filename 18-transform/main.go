@@ -70,6 +70,7 @@ func handleUploadForm(w http.ResponseWriter, r *http.Request) {
 
 	results := make([]string, num)
 	for n := 1; n <= num; n++ {
+		// TODO: Make this into goroutines for better performance
 		path, err := run(filepath.Join(cwd, "img.png"), mode, n)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
