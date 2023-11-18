@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Your results</h1>
+    {{range .}}
+    <p>
+      <img src="{{.}}" width="400" />
+    </p>
+    {{end}}
+</body>
+</html>

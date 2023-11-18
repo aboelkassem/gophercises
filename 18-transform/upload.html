@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+</head>
+<body>
+    <h1>Upload your image</h1>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <p>
+            <label for="img">Image:</label>
+            <br />
+            <input id="img" type="file" name="img" />
+          </p>
+          <p>
+            <label for="mode">Mode:</label>
+            <br />
+            <select id="mode" name="mode">
+              <option value="0">Combo</option>
+              <option value="1">Triangle</option>
+              <option value="2">Rectangle</option>
+              <option value="3">Ellipse</option>
+              <option value="4">Circle</option>
+              <option value="5">Rotated Rectangle</option>
+              <option value="6">Beziers</option>
+              <option value="7">Rotated Ellipse</option>
+              <option value="8">Polygon</option>
+            </select>
+          </p>
+          <br>
+          <p>
+            <label for="num">Number:</label>
+            <br>
+            <input type="number" name="num" id="num" min="1" max="100" step="1" value="1">
+          </p>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
